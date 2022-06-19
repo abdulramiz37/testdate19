@@ -1,54 +1,38 @@
-.App {
+.body{
+  margin: 1rem;
+}
+
+.single-product{
+  width: 200px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.single-product:hover{
+  box-shadow: 5px 0px 2px black;
+  border-color: gray;
+}
+.single-product > img{
+  width: 200px;
+  max-height: 200px;
+}
+.product-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-evenly;
+  gap: 2rem;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header >h1{
+  display: inline;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header>button{
+  
+  float: right;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-.card{
-  width: 300px;
-  height: auto;
-  border: 1px solid yellow;
-  background-color: blue;
-  padding: 10px;
-}
-.cardHeader{
-  padding: 5px;
-  border-bottom: 1px solid;
-}
-.cardFooter{
-  padding: 10px;
+header{
+  border-bottom: 1px solid lightgreen; 
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
